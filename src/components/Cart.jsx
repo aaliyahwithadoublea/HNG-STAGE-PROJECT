@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '/Cart.css'; // Import your CSS file
+import 'Cart.css'; // Import your CSS file
 
-const Cart = () => {
+const CartComponent = () => {
     const [isOpen, setIsOpen] = useState(false); // State for mobile navigation
 
     const toggleNav = () => {
@@ -20,7 +20,9 @@ const Cart = () => {
                 <div className="search-cart">
                     <input type="text" placeholder="Search" style={{ width: '300px' }} />
                     <div className="icons">
-                        {/* Your icon elements here */}
+                        <img src="search icon.png" alt="Search" />
+                        <img src="love icon.png" alt="Love" />
+                        <img src="cart icon.png" alt="Cart" />
                     </div>
                     <div className="hamburger" id="hamburger" onClick={toggleNav}>☰</div>
                 </div>
@@ -39,23 +41,30 @@ const Cart = () => {
                 </div>
                 <div className="cart-container">
                     <div className="cart-items">
-                        {/* Your cart items here */}
+                        {/* Example of a cart item */}
+                        <div className="cart-item">
+                            <div className="product">
+                                <img src="product-image.jpg" alt="Product" />
+                                <div className="product-details">
+                                    <p>Product Name</p>
+                                    <p>$100.00</p>
+                                </div>
+                            </div>
+                            <div className="quantity">
+                                <button>-</button>
+                                <span className="count">1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
                     </div>
                     <div className="summary">
-                        <h2>Summary</h2>
-                        <div>
-                            <input type="radio" id="pickup" name="delivery" value="pickup" checked />
-                            <label htmlFor="pickup">Pickup</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="shipping" name="delivery" value="shipping" />
-                            <label htmlFor="shipping">Shipping</label>
-                        </div>
+                        <h2>Order Summary</h2>
                         <div className="totals">
-                            <div>Subtotal: ₦92,000</div>
-                            <div>Total: ₦92,000</div>
+                            <p>Subtotal: $100.00</p>
+                            <p>Shipping: $10.00</p>
+                            <p>Total: $110.00</p>
                         </div>
-                        <button className="checkout-button">Proceed to checkout</button>
+                        <button className="checkout-button">Proceed to Checkout</button>
                     </div>
                 </div>
             </div>
@@ -63,4 +72,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default CartComponent;
