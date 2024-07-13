@@ -1,8 +1,11 @@
 import React from 'react';
+import "../Header.css";
+import socials from '../assets/Social media.png'
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        
+        <footer className="footer" >
             <div className="footer-columns">
                 <div className="footer-column">
                     <a href="#">Home</a>
@@ -26,8 +29,9 @@ const Footer = () => {
                     <a href="#">Collection</a>
                 </div>
             </div>
+            <br/>
             <div className="social-media">
-                <img src="Social media.png" alt="Social Media Icons" />
+                <img src={socials} alt="Social Media Icons" />
             </div>
         </footer>
     );

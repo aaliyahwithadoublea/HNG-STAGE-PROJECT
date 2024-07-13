@@ -1,8 +1,10 @@
 import React from 'react';
+import "../Header.css";
+// import "../"
 
 const Subscription = () => {
     return (
-        <section>
+        <section style={{backgroundColor:'white'}}>
             <div className="subscription-container">
                 <h2>Subscribe to our letters!</h2>
                 <p>To receive updates on latest fashion trends, updates <br />and latest news from us.</p>
@@ -11,6 +13,7 @@ const Subscription = () => {
                     <button type="submit">SUBSCRIBE</button>
                 </form>
             </div>
+            <br/> <br/>
         </section>
     );
 };

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import search from '../assets/search icon.png'
+import love from '../assets/love icon.png'
+import cart from '../assets/cart icon.png'
+import logo from '../assets/DASHSTEPS.png'
 import "../Checkout.css";
 
-const CheckoutPage = () => {
+const Checkout = () => {
     const [isNavOpen, setIsNavOpen] = useState(false); // State to track if nav is open
 
     const toggleNav = () => {
@@ -96,4 +100,4 @@ const CheckoutPage = () => {
     );
 }
 
-export default CheckoutPage;
+export default Checkout;

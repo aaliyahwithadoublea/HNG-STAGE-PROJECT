@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import 'Cart.css'; // Import your CSS file
+// import "../Cart.css";
+import "../Cart.css";
 
-const CartComponent = () => {
+const Cart = () => {
     const [isOpen, setIsOpen] = useState(false); // State for mobile navigation
 
     const toggleNav = () => {
@@ -10,23 +11,7 @@ const CartComponent = () => {
 
     return (
         <div className="body">
-            <header className="header">
-                <div className="logo"><img src="./DASHSTEPS.png" alt="Logo" /></div>
-                <nav className={`nav ${isOpen ? 'open' : ''}`}>
-                    <a href="#">Listing Page</a>
-                    <a href="cart.html">Cart</a>
-                    <a href="checkout.html">Checkout</a>
-                </nav>
-                <div className="search-cart">
-                    <input type="text" placeholder="Search" style={{ width: '300px' }} />
-                    <div className="icons">
-                        <img src="search icon.png" alt="Search" />
-                        <img src="love icon.png" alt="Love" />
-                        <img src="cart icon.png" alt="Cart" />
-                    </div>
-                    <div className="hamburger" id="hamburger" onClick={toggleNav}>☰</div>
-                </div>
-            </header>
+        
             <div className="container">
                 <h1>Cart</h1>
                 <div className="steps">
@@ -72,4 +57,4 @@ const CartComponent = () => {
     );
 };
 
-export default CartComponent;
+export default Cart;

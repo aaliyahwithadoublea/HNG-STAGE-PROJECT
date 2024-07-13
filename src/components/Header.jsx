@@ -3,6 +3,7 @@ import love from '../assets/love icon.png'
 import cart from '../assets/cart icon.png'
 import logo from '../assets/DASHSTEPS.png'
 import "../Header.css";
+import { Link } from 'react-router-dom';
 
 import React, { useState } from 'react';
 
@@ -15,14 +16,14 @@ const Header = () => {
     };
 
     return (
-        <header className="header">
+        <header className="header" style={{backgroundColor:'yellow'}}>
             <div className="logo">
                 <img src={logo} alt="Logo" />
             </div>
             <nav className="nav" style={{ color: '#E23E57' }}>
                 <a href="/">Listing Page</a>
-                <a href="./cart">Cart</a>
-                <a href="./checkout">Checkout</a>
+                <Link to="/cart">Cart</Link>
+                <Link to="/checkout">Checkout</Link>
             </nav>
             <div className="search-cart">
                 <input type="text" placeholder="Search" style={{ width: '300px' }} />

@@ -121,18 +121,20 @@ a:hover {
 }
 
 .shop-now {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #E23E57;
+    padding: 10px 20px;
+    /* background-color: #e23e57; */
+    color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 4px;
+    width: 301px;
+    height: 61px;
+    cursor: pointer;
+    background-color: #e23e57;
 }
 
 .shop-now:hover {
-    background-color: #d0364f;
+    background-color: #d63953c2;
 }
 
 .best-deals {
@@ -161,6 +163,63 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.product-card1 {
+    background-color: white;
+    padding: 1rem;
+    width: calc(25% - 2rem);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 221px;
+    height: 366px;
+    /* outline: 2px solid green; */
+    border-radius: 10px;
+    /* background-color: blue; */
+}
+
+/* .price {
+    color: red;
+    font-size: 1.1em;
+    font-weight: bold;
+} */
+
+.product-info1 h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.product-info1 {
+    background-color: #E23E57;
+    border-radius: 10px;
+    color: white;
+    /* outline: 2px solid purple; */
+    width: 221px;
+    height: 128px;
+    margin-left: -1.0rem;
+    margin-top: -0.9rem;
+    /* margin-right: 10rem; */
+    padding: 1rem;
+    
+}
+/* .price {
+    color: red;
+    font-size: 1.1em;
+    font-weight: bold;
+} */
+
+.product-info1 p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #E23E57;
+}
+
 .product-card:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
@@ -168,8 +227,9 @@ a:hover {
 
 .product-image img {
     max-width: 100%;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     border-radius: 5px;
+    /* outline: 2px solid blue; */
 }
 
 .product-info {
@@ -208,20 +268,24 @@ a:hover {
 
 .gender {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
 .nav1 {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .product-grid1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Adjust the gap between the product cards as needed */
+    margin: 0 auto;
+    justify-content: center;
+    margin-left: 4rem;
+    /* padding: 9rem;margin-bottom: 3rem; */
 }
 
 .product-card1 {
@@ -229,6 +293,8 @@ a:hover {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* padding: 9rem; */
+    margin-bottom: 3rem;
 }
 
 .product-card1:hover {
@@ -254,73 +320,82 @@ a:hover {
 }
 
 .subscription-container {
-    background-color: #FFFFFF;
-    padding: 4rem 2rem;
+    background-color: #ec5b62;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
+    max-width: 900px;
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
 }
 
 .subscription-container h2 {
-    font-size: 2.5rem;
-    color: #474747;
-    margin-bottom: 1rem;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .subscription-container p {
-    font-size: 1.125rem;
-    color: #474747;
-    margin-bottom: 2rem;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.subscription-container form {
+form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.subscription-container input[type="email"] {
-    padding: 1rem;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.subscription-container button[type="submit"] {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #E23E57;
+form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1 1 auto;
+    min-width: 200px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ec5b62;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.subscription-container button[type="submit"]:hover {
-    background-color: #d0364f;
+form button:hover {
+    background-color: #f1f1f1;
 }
 
 .footer {
-    background-color: #FFFFFF;
-    padding: 4rem 2rem;
-    text-align: left;
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-columns {
     display: flex;
-    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-column {
-    flex: 1;
+    margin: 10px 20px;
 }
 
 .footer-column a {
     display: block;
-    margin-bottom: 1rem;
-    color: #474747;
-    font-size: 1rem;
+    color: #E23E57;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
 }
 
 .social-media {
